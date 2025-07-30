@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class Prodotto {
 
-    Random randomNum = new Random();
+   
 
 
     private int codice;
@@ -15,6 +15,8 @@ public class Prodotto {
     
 
     public Prodotto(String nome, String descrizione, float prezzo, int iva){
+        Random randomNum = new Random();
+
         this.codice = randomNum.nextInt(50);
         this.nome = nome;
         this.descrizione = descrizione;
@@ -23,6 +25,8 @@ public class Prodotto {
     }
 
     public Prodotto(){
+        Random randomNum = new Random();
+        
         this.codice = randomNum.nextInt(50);
         this.nome = nome;
         this.descrizione = descrizione;
